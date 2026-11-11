@@ -8,6 +8,7 @@ import { FormlyMatToggleModule } from '@ngx-formly/material/toggle';
 import { FormlyIonicModule } from '@ngx-formly/ionic';
 import { FormlyKendoModule } from '@ngx-formly/kendo';
 import { FormlyPrimeNGModule } from '@ngx-formly/primeng';
+import { FormlyOptimusUIModule } from '@ngx-formly/optimus-ui';
 import { FormlyNgZorroAntdModule } from '@ngx-formly/ng-zorro-antd';
 
 const label = 'Accept <strong class="html-label">terms</strong>';
@@ -33,6 +34,11 @@ const adapters = [
   },
   { name: 'kendo', imports: [FormlyKendoModule], types: ['input', 'checkbox', 'radio', 'select', 'textarea'] },
   { name: 'primeng', imports: [FormlyPrimeNGModule], types: ['input', 'checkbox', 'radio', 'select', 'textarea'] },
+  {
+    name: 'optimus-ui',
+    imports: [FormlyOptimusUIModule],
+    types: ['input', 'checkbox', 'radio', 'select', 'textarea'],
+  },
   {
     name: 'ng-zorro-antd',
     imports: [FormlyNgZorroAntdModule],

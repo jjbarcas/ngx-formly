@@ -12,6 +12,8 @@ import { routes } from './app.routes';
 import { provideIonicAngular } from '@ionic/angular';
 import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeuix/themes/aura';
+import { provideOptimus } from '@openng/optimus-ui/config';
+import OptimusAura from '@openng/optimus-ui-themes/aura';
 import { provideNzI18n, en_US } from 'ng-zorro-antd/i18n';
 
 export const appConfig: ApplicationConfig = {
@@ -21,6 +23,7 @@ export const appConfig: ApplicationConfig = {
     { provide: APP_BASE_HREF, useValue: '/' },
     provideAnimations(),
     providePrimeNG({ theme: { preset: Aura, options: { darkModeSelector: '[data-bs-theme="dark"]' } } }),
+    provideOptimus({ theme: { preset: OptimusAura, options: { darkModeSelector: '[data-bs-theme="dark"]' } } }),
     provideNzI18n(en_US),
     provideRouter(routes),
     provideLoadingBarRouter(),

@@ -61,6 +61,7 @@ Use the search button or Cmd/Ctrl+K to search guide and migration text, plus UI 
 | [Material2](https://github.com/angular/material2) | [Demo](https://formly.dev/ui/material)  | [StackBlitz](https://stackblitz.com/edit/ngx-formly-ui-material)  |
 | [Ionic](https://ionicframework.com)               | [Demo](https://formly.dev/ui/ionic)     | [StackBlitz](https://stackblitz.com/edit/ngx-formly-ui-ionic)     |
 | [PrimeNG](http://primefaces.org/primeng/#/)       | [Demo](https://formly.dev/ui/primeng)   | [StackBlitz](https://stackblitz.com/edit/ngx-formly-ui-primeng)   |
+| [Optimus UI](https://github.com/openng-org/optimus-ui) | [Demo](https://formly.dev/ui/optimus-ui) | [StackBlitz](https://stackblitz.com/edit/ngx-formly-ui-optimus-ui) |
 | [Kendo](http://www.telerik.com/kendo-angular-ui)  | [Demo](https://formly.dev/ui/kendo)     | [StackBlitz](https://stackblitz.com/edit/ngx-formly-ui-kendo)     |
 | [NG-ZORRO](http://ng.ant.design) | [Demo](https://formly.dev/ui/ng-zorro-antd) | [StackBlitz](https://stackblitz.com/edit/ngx-formly-ui-ng-zorro-antd)     |
 | [NativeScript](https://www.nativescript.org)      | ||
@@ -89,7 +90,8 @@ Angular Reactive Forms; Signal Forms integration is planned for v12.
 The Ionic adapter requires Ionic 9 and uses its standalone components. Initialize Ionic with
 `provideIonicAngular()` from `@ionic/angular` in your application providers.
 The website uses PrimeNG 21.1.10. See the [PrimeNG adapter setup](src/ui/primeng/README.md#installation)
-for its Angular 22 npm overrides.
+for its Angular 22 npm overrides. The Optimus UI adapter requires `@openng/optimus-ui` 2.0.2 or newer,
+which supports Angular 22 without overrides.
 
 See the [v11 upgrade guide](UPGRADE-11.0.md) for dependency updates and zoneless migration steps.
 Applications staying on Angular 21 should use Formly v10.

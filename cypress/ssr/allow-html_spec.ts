@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 describe('HTML labels and descriptions', () => {
-  ['bootstrap', 'material', 'ionic', 'kendo', 'primeng', 'antd'].forEach((ui) => {
+  ['bootstrap', 'material', 'ionic', 'kendo', 'primeng', 'optimus-ui', 'antd'].forEach((ui) => {
     it(`renders and updates ${ui} labels and descriptions`, () => {
       if (ui !== 'ionic') {
         cy.request(`/${ui}`)

@@ -53,4 +53,25 @@ describe('getExampleFiles', () => {
     expect(manifest.dependencies.primeng).toBeUndefined();
     expect(manifest.overrides).toBeUndefined();
   });
+
+  it.each(['optimus-ui', 'core'])('exports installable Optimus UI examples for %s', (type) => {
+    const { files, dependencies } = getExampleFiles(type, {
+      ...example,
+      files: [
+        {
+          file: 'app.config.ts',
+          filecontent: "import { withFormlyOptimusUI } from '@ngx-formly/optimus-ui';",
+        },
+      ],
+    });
+    const manifest = JSON.parse(files['package.json']);
+
+    expect(manifest.dependencies['@openng/optimus-ui']).toBe('^2.0.2');
+    expect(manifest.dependencies['@openng/optimus-ui-themes']).toBe('^2.0.2');
+    expect(manifest.dependencies['@ngx-formly/optimus-ui']).toBeDefined();
+    expect(manifest.dependencies.primeng).toBeUndefined();
+    expect(manifest.dependencies).toEqual(dependencies);
+    expect(manifest.overrides).toBeUndefined();
+    expect(files['src/styles.scss']).toContain('primeflex/primeflex.css');
+  });
 });

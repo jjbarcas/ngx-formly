@@ -20,6 +20,7 @@ Follow these steps to get started with Ngx Formly. Also check out our [demos](ht
       - `ng-zorro-antd`
       - `ionic`
       - `primeng`
+      - `optimus-ui`
       - `kendo`
       - `nativescript`
 
@@ -27,7 +28,7 @@ Follow these steps to get started with Ngx Formly. Also check out our [demos](ht
     ```bash
     npm install @angular/forms @ngx-formly/core @ngx-formly/bootstrap --save
     ```
-    - replace `bootstrap` with one of the following available themes: `material`, `ionic`, `primeng`, `kendo`, `nativescript`.
+    - replace `bootstrap` with one of the following available themes: `material`, `ionic`, `primeng`, `optimus-ui`, `kendo`, `nativescript`.
 
   Once installed, import the config in the `app.config.ts`:
 

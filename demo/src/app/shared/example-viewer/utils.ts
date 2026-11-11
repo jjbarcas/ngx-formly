@@ -37,7 +37,9 @@ export function getExampleFiles(type: string, exampleData: ExampleType): any {
 
   const options: IThemeOption = { type };
 
-  if (['bootstrap', 'material', 'kendo', 'ionic', 'primeng', 'ng-zorro-antd'].indexOf(options.type) === -1) {
+  if (
+    ['bootstrap', 'material', 'kendo', 'ionic', 'primeng', 'optimus-ui', 'ng-zorro-antd'].indexOf(options.type) === -1
+  ) {
     if (appConfigContent.indexOf('@ngx-formly/bootstrap') !== -1) {
       options.type = 'bootstrap';
     } else if (appConfigContent.indexOf('@ngx-formly/material') !== -1) {
@@ -48,6 +50,8 @@ export function getExampleFiles(type: string, exampleData: ExampleType): any {
       options.type = 'ionic';
     } else if (appConfigContent.indexOf('@ngx-formly/primeng') !== -1) {
       options.type = 'primeng';
+    } else if (appConfigContent.indexOf('@ngx-formly/optimus-ui') !== -1) {
+      options.type = 'optimus-ui';
     } else if (appConfigContent.indexOf('@ngx-formly/ng-zorro-antd') !== -1) {
       options.type = 'ng-zorro-antd';
     }
@@ -62,7 +66,7 @@ export function getExampleFiles(type: string, exampleData: ExampleType): any {
   }
 
   if (
-    ['material', 'kendo', 'primeng', 'ng-zorro-antd'].indexOf(options.type) !== -1 ||
+    ['material', 'kendo', 'primeng', 'optimus-ui', 'ng-zorro-antd'].indexOf(options.type) !== -1 ||
     options.includeMaterial ||
     exampleData.files.some((f) => f.filecontent.indexOf('@angular/animations') !== -1)
   ) {

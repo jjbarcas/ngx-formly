@@ -19,6 +19,7 @@ Please create and share a reproduction of the issue using one of our starter tem
 - Material: https://stackblitz.com/edit/ngx-formly-ui-material
 - Ionic: https://stackblitz.com/edit/ngx-formly-ui-ionic
 - Primeng: https://stackblitz.com/edit/ngx-formly-ui-primeng
+- Optimus UI: https://stackblitz.com/edit/ngx-formly-ui-optimus-ui
 - Kendo: https://stackblitz.com/edit/ngx-formly-ui-kendo
 -->
 

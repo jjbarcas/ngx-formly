@@ -66,6 +66,7 @@ function mapUIName(uiTheme: string): string {
     nativescript: 'Nativescript',
     ionic: 'Ionic',
     primeng: 'PrimeNG',
+    'optimus-ui': 'OptimusUI',
     kendo: 'Kendo',
     'ng-zorro-antd': 'NgZorroAntd',
   };

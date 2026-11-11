@@ -8,7 +8,7 @@ ngx-formly is a TypeScript library for building dynamic forms with Angular React
 
 - `src/core/src/lib/`: form components, field models, builder/config services, extensions, and shared utilities.
 - `src/core/{json-schema,select,preset,testing}/`: secondary entry points for schema conversion, select options, presets, and test helpers.
-- `src/ui/`: Bootstrap, Material, Ionic, PrimeNG, Kendo, NG-ZORRO, and NativeScript adapters. Individual controls often live in secondary entry points such as `src/ui/bootstrap/input/src/`.
+- `src/ui/`: Bootstrap, Material, Ionic, PrimeNG, Optimus UI, Kendo, NG-ZORRO, and NativeScript adapters. Individual controls often live in secondary entry points such as `src/ui/bootstrap/input/src/`.
 - `src/schematics/`: Angular CLI installation schematics and their tests.
 - `demo/src/app/examples/` and `demo/src/app/ui/`: runnable examples and UI demonstrations; routes and navigation live under `demo/src/app/`.
 - `docs/`, `README.md`, and `UPGRADE-*.md`: guides, project overview, and migration instructions.

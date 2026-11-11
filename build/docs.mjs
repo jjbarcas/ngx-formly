@@ -197,6 +197,7 @@ export function apiMenu(pages) {
       nativescript: 'NativeScript',
       'ng-zorro-antd': 'NG-ZORRO',
       primeng: 'PrimeNG',
+      'optimus-ui': 'Optimus UI',
       'json-schema': 'JSON Schema',
     };
     const label = labels[groupPath.split('/').at(-1)];

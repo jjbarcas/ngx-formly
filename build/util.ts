@@ -12,6 +12,7 @@ export const PACKAGES = [
   'material',
   'ionic',
   'primeng',
+  'optimus-ui',
   'kendo',
   'nativescript',
   'ng-zorro-antd',

@@ -60,6 +60,14 @@ export const dependencies: { [id: string]: { [id: string]: string } } = {
     primeng: '^21.1.10',
     '@primeuix/themes': '^2.0.2',
   },
+  'optimus-ui': {
+    '@ngx-formly/optimus-ui': formlyVersion,
+    '@angular/router': angularVersion,
+    '@angular/cdk': angularVersion,
+    primeflex: '^3.2.0',
+    '@openng/optimus-ui': '^2.0.2',
+    '@openng/optimus-ui-themes': '^2.0.2',
+  },
   ionic: { '@ngx-formly/ionic': formlyVersion, '@ionic/angular': '^9.0.0', '@angular/router': angularVersion },
   'ng-zorro-antd': {
     '@ngx-formly/ng-zorro-antd': formlyVersion,
@@ -88,6 +96,7 @@ export const ngProvider: { [id: string]: string } = {
   material: 'withFormlyMaterial',
   kendo: 'withFormlyKendo',
   primeng: 'withFormlyPrimeNG',
+  'optimus-ui': 'withFormlyOptimusUI',
   ionic: 'withFormlyIonic',
   'ng-zorro-antd': 'withFormlyNgZorroAntd',
 };
@@ -119,6 +128,7 @@ export const TEMPLATE_FILES: { [id: string]: ExampleType['files'] } = {
       `,
     },
   ],
+  'optimus-ui': [{ file: 'styles.scss', filecontent: `@import 'primeflex/primeflex.css';` }],
   ionic: [
     {
       file: 'styles.scss',

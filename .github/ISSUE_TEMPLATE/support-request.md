@@ -19,5 +19,6 @@ Here are our starter templates in a case you may need/want to reproduce an examp
 - Material: https://stackblitz.com/edit/ngx-formly-ui-material
 - Ionic: https://stackblitz.com/edit/ngx-formly-ui-ionic
 - Primeng: https://stackblitz.com/edit/ngx-formly-ui-primeng
+- Optimus UI: https://stackblitz.com/edit/ngx-formly-ui-optimus-ui
 - Kendo: https://stackblitz.com/edit/ngx-formly-ui-kendo
 -->

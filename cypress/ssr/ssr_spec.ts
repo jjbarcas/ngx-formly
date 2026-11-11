@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 describe('Server side rendering', () => {
-  ['material', 'bootstrap', 'kendo', 'primeng', 'antd'].forEach((ui) => {
+  ['material', 'bootstrap', 'kendo', 'primeng', 'optimus-ui', 'antd'].forEach((ui) => {
     it(`should hydrate ${ui} inputs`, () => {
       cy.request(`/${ui}`).its('body').should('contain', 'Form ready');
       cy.visit(`/${ui}`);
@@ -53,6 +53,16 @@ describe('Server side rendering', () => {
 
   it('should render primeng ui', () => {
     cy.request('/primeng')
+      .its('body')
+      .should('contain', 'input label')
+      .and('contain', 'textarea label')
+      .and('contain', 'radio label')
+      .and('contain', 'checkbox label')
+      .and('contain', 'select label');
+  });
+
+  it('should render optimus-ui', () => {
+    cy.request('/optimus-ui')
       .its('body')
       .should('contain', 'input label')
       .and('contain', 'textarea label')
